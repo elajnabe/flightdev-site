@@ -1,0 +1,12 @@
+footer {
+    padding: 0.6em;
+    text-align: center;
+}
+
+.lightFooter {
+    background: #F8FAFC;
+}
+
+.darkFooter {
+    background: #14191F;
+}

@@ -1,0 +1,131 @@
+ul {
+    list-style: none;
+}
+
+header>div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header .title {
+    width: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-top: 0.4em;
+    cursor: pointer;
+}
+
+.imageHeader {
+    width: 7em;
+}
+
+@media (max-width: 622px) {
+    header .title {
+        font-size: 1.2em;
+        font-weight: 700;
+        margin-top: 0.4em;
+        margin-left: -2em;
+    }
+
+    .imageHeader {
+        width: 2em;
+        margin-top: 0.7em;
+    }
+}
+
+header .topNav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.imagehead {
+    cursor: pointer;
+}
+
+header .topNav ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 1.5rem;
+    margin-top: 1.7em;
+}
+
+header .topNav ul li {
+    font-weight: 500;
+    font-size: 1.3em;
+    align-content: center;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s all;
+}
+
+@media (max-width: 1600px) {
+    header .topNav ul {
+        display: none;
+    }
+}
+
+.iconDiscord {
+    margin-bottom: -0.15rem;
+}
+
+.discordButtonLight:hover {
+    color: #0063CC;
+    background: #F8FAFC;
+}
+
+.discordButtonDark:hover {
+    color: #3396FF;
+    background: #14191F;
+}
+
+.liLight:hover {
+    color: #0056B2;
+}
+
+.liDark:hover {
+    color: #3396FF;
+}
+
+.button-discord {
+    font-family: inherit;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 1.1em;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-top: -0.5rem;
+    font-size: 1.05em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.button-discord span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-discord svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.button-discord:hover svg {
+    transform: translateX(2.9em) scale(1.8);
+}
+
+.button-discord:hover span {
+    transform: translateX(8em);
+}
+
+.button-discord:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,239 @@
+@import url('https://fonts.cdnfonts.com/css/product-sans');
+
+.home-body-space {
+    margin-bottom: 15em;
+}
+
+.home_body {
+    display: flex;
+    flex-direction: column;
+    gap: 10em;
+}
+
+.home_body2 {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+.home_body .image {
+    width: 40em;
+}
+
+.home_section1 {
+    display: flex;
+    flex-direction: row;
+    height: 22em;
+}
+
+.home_init {
+    margin-top: 1em;
+    width: 10em;
+    height: 5em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8em;
+    line-height: 115.7%;
+    letter-spacing: -0.015em;
+}
+
+.home_init_sub {
+    margin-top: 2em;
+    width: 24em;
+    height: 2em;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 0.4em;
+    line-height: 115.7%;
+    letter-spacing: -0.015em;
+}
+
+.section1_img {
+    margin-top: 5em;
+    margin-left: 4em;
+    filter: drop-shadow(10px 10px 5px rgba(0, 140, 255, 0.884))
+}
+
+/* .home-contactus {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-right: 82.5%;
+    width: 13.2rem;
+    height: 4rem;
+    border: none; 
+    border-radius: 20px;
+    margin-top: 3rem;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    transition: 0.3s all;
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 26px 46px #1a89ffa6;
+} */
+
+.home-contactus {
+    font-family: inherit;
+    padding: 0.8em 2.5em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 1.3em;
+    overflow: hidden;
+    transition: all 0.2s;
+    margin-top: 6em;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0em 1.5em 3em #1a89ffa6;
+}
+
+.space-text-logo {
+    margin-left: 0.6em;
+}
+
+.home-contactus:hover {
+    box-shadow: 0 0 0.5em rgb(0, 140, 255),
+        0 0 2em rgb(0, 140, 255),
+        0 0 4em rgb(0, 140, 255)
+}
+
+
+.home_init_special {
+    color: #1A88FF;
+}
+  
+  /* === removing default title-body-2 style ===*/
+  .title-body-2-light {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* title-body-2 styling */
+  .title-body-2-light {
+    --border-right: 6px;
+    --text-stroke-color: rgba(3, 3, 3, 0.6);
+    --animation-color: #1A88FF;
+    --fs-size: 3.8em;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.9em;
+    color: black;
+  }
+
+  .title-body-2-dark {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+
+  .title-body-2-dark {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #1A88FF;
+    --fs-size: 3.8em;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.9em;
+    color: white;
+  }
+
+  /* this is the text, when you hover on title-body-2 */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  
+  /* hover */
+  .title-body-2-light:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .title-body-2-dark:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .card-sorting {
+    padding: 0.2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em 2em;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  @media (max-width: 622px) {
+    .home_init {
+      font-weight: 500;
+      font-size: 2.2em;
+      margin-left: 1em;
+    }
+
+    .title-body-2-light {
+      font-size: 1.8em;
+      margin-left: 1em;
+    }
+
+    .title-body-2-dark {
+      font-size: 1.8em;
+      margin-left: 1em;
+    }
+
+    .section1_img {
+      margin-left: 4em;
+      margin-top: 10em;      
+      filter: drop-shadow(10px 10px 5px rgba(0, 140, 255, 0.884))
+    }
+
+    .home_section1 {
+      flex-direction: column;
+    }
+
+    .section1_img_src {
+      width: 15em;
+    }
+
+    .card-sorting {   
+      gap: 1em 1em;
+      width: 95%;
+      margin-left: 0.4em;
+      overflow-x: hidden;
+    }
+
+    .home-contactus {
+      padding: 0.4em 1.1em;
+      border-radius: 1.3em;
+      margin-top: -10em;
+      margin-left: 2.5em;
+      font-size: 0.9em;
+      font-weight: 600;
+      margin-bottom: 30em;
+    }
+
+  }

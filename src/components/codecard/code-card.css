@@ -1,0 +1,135 @@
+.card {
+  border-radius: 10px;
+  width: 300px;
+  height: 400px;
+  transition: all 1s;
+  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
+              -15px -15px 30px rgba(60, 60, 60, 0.082);
+  text-align: center;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 0;
+  }
+
+  .card:hover .header {
+    opacity: 0.2;
+    filter: blur(0.5rem);
+  }
+
+  .card:hover .content {
+    display:contents;
+  }
+  
+  .card .header {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  
+  .card .header .img-box {
+    width: 170px;
+  }
+  
+  .card .header .title {
+    font-size: 1.1em;
+    letter-spacing: .1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 4px 0 14px 0;
+    transition: all .5s;
+  }
+  
+  .card:hover .card .header .title {
+    padding: 0;
+  }
+  
+  .card .content {
+    display: none;
+    white-space: pre-wrap;
+  }
+  
+  .card .content p {
+    transition: all 1.5s;
+    font-size: 20px;
+    position: absolute;
+    width: 280px;
+    height: 360px;
+    max-width: 280px;
+    max-height: 400px;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: .06em;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  .card .content a {
+    display: flex;
+    position: absolute;
+    color: #60A7FA;
+    margin-left: 140px;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+  }
+  
+  .card .content .btn-link:hover {
+    color: #7ab8ff;
+  }
+
+  .icon-arrow {
+    margin-top: -1.5px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 622px) {
+    .card {
+      width: 150px;
+      height: 200px;
+    }
+
+    .card .header {
+      height: 200px;
+      margin-bottom: 16px;
+    }
+
+    .card .header .img-box {
+      width: 80px;
+    }
+    
+    .card .header .title {
+      font-size: 0.8em;
+      padding: 14px 14px 14px 14px;
+    }
+
+    .card .content p {
+      font-size: 10px;
+      width: 140px;
+      height: 200px;
+      max-width: 140px;
+      max-height: 200px;
+      margin: 0px;
+      letter-spacing: .06em;
+      font-weight: 500;
+    }
+    
+    .card .content a {
+      margin-left: 140px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      width: 160px;
+    }
+
+  }

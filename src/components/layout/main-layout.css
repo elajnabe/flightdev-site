@@ -1,0 +1,85 @@
+/* App.css */
+.parent-container {
+    display: flex;
+    flex-direction: row;
+    align-items:center; /* center vertically */
+    justify-content: space-evenly;
+}
+  
+  
+.center {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.cloud-b {
+    position: absolute;
+    animation: move 30s infinite;
+    z-index: -10;
+    margin-top: 15em;
+}
+
+.cloud-b2 {
+    position: absolute;
+    animation: move 50s infinite;
+    z-index: -10;
+    margin-top: 30em;
+}
+
+.cloud-b3 {
+    position: absolute;
+    animation: move 70s infinite;
+    z-index: -10;
+    margin-top: 45em;
+}
+
+@media (max-width: 622px) {
+    .cloud-b {
+        animation: movea 10s infinite;
+    }
+    
+    .cloud-b2 {
+        animation: movea 15s infinite;
+    }
+    
+    .cloud-b3 {
+        animation: movea 20s infinite;
+    }
+
+    .comp {
+        display: none;
+    }
+}
+
+
+
+.hidextras {
+    overflow: hidden;
+}
+
+@keyframes move {
+0% {
+    transform: translatex(0vw);
+}
+50% {
+    transform: translatex(80vw);
+}
+100% {
+    transform: translatex(0vw);
+}
+}
+
+@keyframes movea {
+    0% {
+        transform: translatex(0vw);
+    }
+    50% {
+        transform: translatex(50%);
+    }
+    100% {
+        transform: translatex(0vw);
+    }
+}
+
