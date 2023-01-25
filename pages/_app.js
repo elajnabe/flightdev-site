@@ -3,7 +3,7 @@ import '../styles/globals.css';
 // all the page css's
 import '../src/components/global/header/header.css'
 import '../src/components/global/footer/footer.css'
-import '../src/components/home/home-page.css'
+import '../src/components/mainpage/home/home-page.css'
 import "../src/components/utils/darkmode/DarkMode.css";
 import "../src/components/layout/main-layout.css";
 import "../src/components/mainpage/codecard/code-card.css";
