@@ -7,6 +7,7 @@ import { ThemeProvider } from 'styled-components';
 import { ToggleHomePageMode } from '../home/home-page'
 import { HomePage } from "../home/home-page";
 import DropdownMenu from "../dropdown/DropdownMenu"
+import { useLocation } from 'react-router-dom'
 
 const darkTheme = {
   splitter: "10em",
@@ -51,12 +52,17 @@ const lightTheme = {
 const MainLayout = ({ children }) => {
   const [theme, setTheme] = useState('dark');
   const isDarkTheme = theme === "dark";
-
   const toggleTheme = () => {
     setTheme(isDarkTheme ? "light" : "dark");
     document.body.style.backgroundColor = isDarkTheme ? darkTheme.background.background : lightTheme.background.background;
     document.body.style.color = isDarkTheme ? darkTheme.text.color : lightTheme.text.color;
   };
+
+  const [currentPath, setCurrentPath] = useState('');
+  useEffect(() => {
+    setCurrentPath(window.location.pathname);
+  }, []);
+
 
   return (
     <>
@@ -81,12 +87,10 @@ const MainLayout = ({ children }) => {
       <DropdownMenu toggleTheme = {toggleTheme} isDarkTheme = {isDarkTheme}/>
       <div className="parent-container">
         <Header isDarkMode={isDarkTheme}/>
-          <Switch toggleTheme = {toggleTheme} isDarkTheme = {isDarkTheme}/>
-        
-        
+        <Switch toggleTheme = {toggleTheme} isDarkTheme = {isDarkTheme}/>
       </div>
       <main>
-        <HomePage isDarkMode={isDarkTheme}/>
+        {currentPath === '/' && <HomePage isDarkMode={isDarkTheme}/>}
       </main>
       <Footer isDarkMode={isDarkTheme}/>
     </ThemeProvider>
