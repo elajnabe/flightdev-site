@@ -1,12 +1,12 @@
 import React, { useState, useEffect} from "react";
-import { Footer } from '../footer/footer';
-import { Header } from '../header/header';
-import Switch from "../darkmode/DarkMode";
+import { Footer } from '../global/footer/footer';
+import { Header } from '../global/header/header';
+import Switch from "../utils/darkmode/DarkMode";
 import styled from "styled-components";
 import { ThemeProvider } from 'styled-components';
 import { ToggleHomePageMode } from '../home/home-page'
 import { HomePage } from "../home/home-page";
-import DropdownMenu from "../dropdown/DropdownMenu"
+import DropdownMenu from "../utils/dropdown/DropdownMenu"
 import { useLocation } from 'react-router-dom'
 
 const darkTheme = {
@@ -60,7 +60,10 @@ const MainLayout = ({ children }) => {
 
   const [currentPath, setCurrentPath] = useState('');
   useEffect(() => {
-    setCurrentPath(window.location.pathname);
+    const intervalId = setInterval(() => {
+      setCurrentPath(window.location.pathname);
+    }, 250);
+    return () => clearInterval(intervalId);
   }, []);
 
 

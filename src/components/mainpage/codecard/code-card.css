@@ -3,8 +3,7 @@
   width: 300px;
   height: 400px;
   transition: all 1s;
-  box-shadow: 15px 15px 30px rgba(25, 25, 25, 0.11),
-              -15px -15px 30px rgba(60, 60, 60, 0.082);
+  box-shadow: 0.4rem 0.4rem 0.6rem rgba(25, 25, 25, 0.11);
   text-align: center;
   overflow: hidden;
   cursor: pointer;
