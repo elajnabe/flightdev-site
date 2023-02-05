@@ -128,6 +128,7 @@
     font-weight: 700;
     margin-bottom: 0.9em;
     color: black;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
   }
 
   .title-body-2-dark {
@@ -151,6 +152,7 @@
     font-weight: 700;
     margin-bottom: 0.9em;
     color: white;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
   }
 
   /* this is the text, when you hover on title-body-2 */
