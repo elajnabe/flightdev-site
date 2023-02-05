@@ -10,13 +10,6 @@ const Text = styled.div`
   transition: ${(props => [props.theme.joinDiscord.transition])};
 `
 
-const Header1 = styled.header`
-  height: ${(props => [props.theme.header.height])};
-  margin: ${(props => [props.theme.header.padding])};
-  transition: ${(props => [props.theme.joinDiscord.transition])};
-  min-width: ${(props => [props.theme.header.width])};
-`;
-
 const SHARMUTA = styled.button`
   color: ${(props => [props.theme.joinDiscord.color])};
   background: ${(props => [props.theme.joinDiscord.background])};
@@ -28,7 +21,7 @@ export const Header = ({isDarkMode}) => {
 
   return (      
         <Text>
-          <Header1>
+          <header className='initHeader'>
             <div>
               <div className="topNav">
                 <div className="imagehead">
@@ -47,7 +40,7 @@ export const Header = ({isDarkMode}) => {
                       </Link>
                     </li>
                     <li className={isDarkMode ? "liLight" : "liDark"}>
-                      <Link href="/events" passHref>
+                      <Link href="/bot-store" passHref>
                         <div> Fivem Scripts</div>
                       </Link>
                     </li>
@@ -73,7 +66,7 @@ export const Header = ({isDarkMode}) => {
                 </nav>
               </div>
             </div>
-          </Header1>
+          </header>
         </Text>
   );
 };

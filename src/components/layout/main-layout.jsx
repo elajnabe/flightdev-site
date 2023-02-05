@@ -4,8 +4,8 @@ import { Header } from '../global/header/header';
 import Switch from "../utils/darkmode/DarkMode";
 import styled from "styled-components";
 import { ThemeProvider } from 'styled-components';
-import { ToggleHomePageMode } from '../home/home-page'
-import { HomePage } from "../home/home-page";
+import { ToggleHomePageMode } from '../mainpage/home/home-page'
+import { HomePage } from "../mainpage/home/home-page";
 import DropdownMenu from "../utils/dropdown/DropdownMenu"
 import { useLocation } from 'react-router-dom'
 
