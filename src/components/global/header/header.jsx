@@ -40,7 +40,7 @@ export const Header = ({isDarkMode}) => {
                       </Link>
                     </li>
                     <li className={isDarkMode ? "liLight" : "liDark"}>
-                      <Link href="/bot-store" passHref>
+                      <Link href="https://fivem.flightdev.co" passHref>
                         <div> Fivem Scripts</div>
                       </Link>
                     </li>
